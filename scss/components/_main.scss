@@ -19,7 +19,7 @@ html {
 
 
 body{
-  font-family: sans-serif;
+  font-family: $droid-sans;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
