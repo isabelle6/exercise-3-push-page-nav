@@ -145,6 +145,15 @@ header {
   .close-btn {
     display: none;
   }
+  .navigation li {
+    display: inline-block;
+  }
+  .navigation li:first-child a {
+    border: none;
+  }
+  .navigation li a {
+    border: none;
+  }
 }
 
 body.noscript .navigation {

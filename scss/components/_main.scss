@@ -130,6 +130,18 @@ header {
         display: none;
     }
     
+    .navigation{
+        li{
+            display: inline-block;
+            &:first-child a{
+                border: none;
+            }
+            a{
+                border: none;
+            }
+        }
+    }
+    
 }
 
 body.noscript .navigation{
