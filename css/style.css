@@ -41,9 +41,13 @@ body.noscript .toggle-btn {
   display: none;
 }
 
-header {
-  padding: 0 1em;
+.header {
+  padding: 0;
   position: relative;
+}
+
+.title {
+  padding: 0 .5em;
 }
 
 .toggle-btn {
@@ -61,15 +65,16 @@ header {
 }
 
 .navigation li:first-child a {
-  border-top: 1px solid #ccc;
+  border-top: 3px solid #fff;
 }
 
 .navigation li a {
   display: block;
   text-align: center;
   padding: .5em 1em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 3px solid #fff;
   text-decoration: none;
+  color: #fff;
 }
 
 .toggle-btn,
@@ -100,6 +105,10 @@ header {
 
 .close-btn {
   margin: 1em;
+}
+
+.menu-items {
+  background-color: #68c3d8;
 }
 
 /**
@@ -159,6 +168,7 @@ header {
   }
   .menu-items {
     width: 100%;
+    padding: .125em 0;
   }
 }
 

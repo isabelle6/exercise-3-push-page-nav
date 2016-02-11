@@ -28,9 +28,13 @@ body{
   }
 }
 
-header {
-  padding: 0 1em;
+.header {
+  padding: 0;
   position: relative;
+}
+
+.title{
+    padding: 0 .5em;
 }
 
 .toggle-btn{
@@ -46,14 +50,15 @@ header {
     li{
         list-style-type: none;
         &:first-child a{
-            border-top: 1px solid $light-grey;
+            border-top: 3px solid $white;
         }
         a{
             display: block;
             text-align: center;
             padding: .5em 1em;
-            border-bottom: 1px solid $light-grey;
+            border-bottom: 3px solid $white;
             text-decoration: none;
+            color: $white;
         }
     } // li
 } // .navigation
@@ -78,6 +83,10 @@ header {
 
 .close-btn{
     margin: 1em;
+}
+
+.menu-items{
+    background-color: $light-blue;
 }
 
 /**
@@ -148,6 +157,7 @@ header {
     
     .menu-items{
         width: 100%;
+        padding: .125em 0;
     }
     
 }// media query
