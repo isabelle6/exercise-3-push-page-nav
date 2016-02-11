@@ -84,7 +84,7 @@ header {
 * Sliding Navigation
 */
 
-// Page should move when the mav opens
+// Page should move when the nav opens
 // This is the only time we will ever use max-width EVER
 @media only screen and (max-width:60em){
  
@@ -102,7 +102,7 @@ header {
         }
         
         &[data-state="slide-open"] .sliding-canvas{
-            transform: translateX(-100%);
+            transform: translateX(50%);
         }
         
         &[data-state="slide-open"]{
@@ -111,10 +111,14 @@ header {
         
     } // .site-wrapper
     
+    .menu-items{
+        width: 50%;
+    }
+    
     .navigation{
         position: absolute;
         width: 100%;
-        right: -100%;
+        left: -50%;
         top: 0;
         bottom: 0;
         padding: 0;
@@ -142,7 +146,11 @@ header {
         }
     }
     
-}
+    .menu-items{
+        width: 100%;
+    }
+    
+}// media query
 
 body.noscript .navigation{
     position: absolute;

@@ -122,17 +122,20 @@ header {
     transition: all 300ms ease-in-out;
   }
   .site-wrapper[data-state="slide-open"] .sliding-canvas {
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
   }
   .site-wrapper[data-state="slide-open"] {
     overflow: visible;
   }
+  .menu-items {
+    width: 50%;
+  }
   .navigation {
     position: absolute;
     width: 100%;
-    right: -100%;
+    left: -50%;
     top: 0;
     bottom: 0;
     padding: 0;
@@ -153,6 +156,9 @@ header {
   }
   .navigation li a {
     border: none;
+  }
+  .menu-items {
+    width: 100%;
   }
 }
 
