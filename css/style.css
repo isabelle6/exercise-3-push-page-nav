@@ -182,7 +182,7 @@ body.noscript .toggle-btn {
             transform: translateX(50%);
   }
   .site-wrapper[data-state="slide-open"] {
-    overflow: visible;
+    overflow: hidden;
   }
   .menu-items {
     width: 50%;
