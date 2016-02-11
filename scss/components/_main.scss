@@ -65,7 +65,8 @@ body{
 
 .toggle-btn,
 .close-btn{
-    color: $text-color;
+    margin: .5em 0;
+    color: $white;
     text-decoration: none;
     height: 40px;
     width: 40px;
@@ -73,8 +74,9 @@ body{
         height: 40px;
         width: 40px;
         display: inline-block;
-        padding: 13px 11px;
-        border: 1px solid $light-grey;
+        padding: 13px 13px;
+        background-color: $blue;
+        border-radius: 25%;
     }
     span{
         @include element-invisible;
@@ -87,6 +89,49 @@ body{
 
 .menu-items{
     background-color: $light-blue;
+}
+
+.list{
+    margin: 0;
+}
+
+.banner{
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.dog{
+    border-bottom: 3px solid $light-blue;
+}
+
+.dog-name{
+    margin: 0;
+    padding: 0 .5em;
+    color: $blue;
+}
+
+.dog-image{
+    width: 100%;
+    padding: .5em 0;
+}
+
+.dog-info{
+    padding: 0 1em;
+}
+
+.source{
+    padding: 0 1em;
+    a{
+        text-decoration: none;
+        color: $blue;
+        &:hover,
+        &:active,
+        &:focus{
+            color: $dark-blue;
+            text-decoration: underline;
+            text-decoration-color: $dark-blue;
+        }
+    }
 }
 
 /**
@@ -164,5 +209,5 @@ body{
 
 body.noscript .navigation{
     position: absolute;
-    right: auto;
+    left: auto;
 }

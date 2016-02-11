@@ -4,7 +4,7 @@ $(function(){
    $('body').removeClass('noscript');
     
     //Sets buttons to toggle data-state
-    $('.toggle-btn, .close-btn').click(function(){
+    $('.toggle-btn, .close-btn, .list-link').click(function(){
         toggleNav();
     });
 });
